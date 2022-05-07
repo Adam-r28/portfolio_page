@@ -1,3 +1,29 @@
-nav {
+html {
+  font-family: "Alegreya Sans", sans-serif;
+  background-color: #ffffff;
+  width: 100vh;
+}
+.nav {
+  display: flex;
   position: sticky;
+  top: 0px;
+  justify-content: space-around;
+  width: 99vh;
+  height: 4vh;
+  background-color: #232323;
+}
+
+.nav__point {
+  flex: 1 1 auto;
+  width: max-content;
+  background-color: #232323;
+  color: #ebebeb;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 1%;
+  margin: 0;
+}
+
+.nav__point:hover {
+  background-color: #54be90;
 }
