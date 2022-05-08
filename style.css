@@ -3,6 +3,7 @@ html {
   background-color: #ffffff;
   width: 100vh;
 }
+
 .nav {
   display: flex;
   position: sticky;
@@ -26,4 +27,173 @@ html {
 
 .nav__point:hover {
   background-color: #54be90;
+}
+
+.start {
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 99vh;
+  height: 35vh;
+  margin-top: 7vh;
+}
+.start h1 {
+  color: #ebebeb;
+  font-weight: 600;
+  margin-bottom: 0.5%;
+}
+.start h1 em {
+  text-decoration: underline;
+  text-decoration-color: #ebebeb;
+  color: #54be90;
+}
+.start p {
+  color: #ebebeb;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 99vh;
+  height: 40vh;
+}
+.intro .intro__text {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #444444;
+  font-size: large;
+}
+.intro .intro__text em {
+  font-weight: bold;
+}
+
+.intro .intro__flow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 99vh;
+  height: 45vh;
+  background-color: #232323;
+  color: #ebebeb;
+}
+
+.intro .intro__flow h3 {
+  text-align: center;
+  color: #54be90;
+}
+.intro__point {
+  padding: 1%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__heading {
+  justify-self: center;
+  text-align: center;
+  color: #54be90;
+  font-size: x-large;
+}
+.skills__lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 30%;
+}
+.lang__name {
+  width: 15%;
+  text-align: center;
+}
+.language__name-text {
+  padding-top: 2px;
+  margin-top: 0;
+  padding-bottom: 2px;
+  background-color: #232323;
+  color: #ebebeb;
+  text-decoration: solid;
+  text-align: center;
+}
+
+.lang_progress {
+  width: 30vh;
+}
+
+#progressbar1,
+#progressbar2,
+#progressbar3,
+#progressbar4,
+#progressbar5,
+#progressbar6,
+#progressbar7,
+#progressbar8 {
+  width: 300px;
+  height: 23px;
+  background-color: #dbdbdb;
+  margin-bottom: 16px;
+}
+
+#progressbar1 > div {
+  height: 23px;
+  width: 80%;
+  background-color: #54be90;
+  text-align: right;
+}
+
+#progressbar2 > div {
+  height: 23px;
+  width: 80%;
+  background-color: #54be90;
+}
+#progressbar3 > div {
+  height: 25px;
+  width: 70%;
+  background-color: #54be90;
+}
+#progressbar4 > div {
+  height: 25px;
+  width: 60%;
+  background-color: #54be90;
+}
+#progressbar5 > div {
+  height: 25px;
+  width: 70%;
+  background-color: #54be90;
+}
+#progressbar6 > div {
+  height: 25px;
+  width: 60%;
+  background-color: #54be90;
+}
+#progressbar7 > div {
+  height: 25px;
+  width: 60%;
+  background-color: #54be90;
+}
+#progressbar8 > div {
+  height: 25px;
+  width: 50%;
+  background-color: #54be90;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__boxes {
+  display: flex;
+  flex-direction: row;
 }
