@@ -230,6 +230,10 @@ html {
   margin: 1%;
 }
 
+div .box:last-child {
+  border-color: black;
+}
+
 .box__top {
   height: 50%;
   width: 99%;
@@ -237,7 +241,9 @@ html {
   border-color: #ffffff;
   border-style: solid;
 }
-
+div .box:last-child .box__top {
+  border-color: black;
+}
 .box__bottom {
   height: 50%;
   width: 99%;
@@ -245,7 +251,10 @@ html {
   border-color: #ffffff;
   border-style: solid;
   text-align: center;
-  justify-self: flex-end;
+}
+
+div .box:last-child .box__bottom {
+  border-color: black;
 }
 
 .box__bottom p {
@@ -277,7 +286,167 @@ html {
   width: 65%;
   color: #ffffff;
   background-color: #54be90;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 5%;
   border: 1px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebebeb;
+  width: 99vh;
+  height: 70vh;
+}
+
+.aboutme__heading {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  font-size: x-large;
+}
+
+.aboutme__content {
+  display: flex;
+  flex-direction: row;
+}
+.aboutme__img {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutme__img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.aboutme__text {
+  width: 55%;
+  height: 100%;
+}
+
+.aboutme__text p em {
+  font-weight: bold;
+}
+div.aboutme__text p:nth-child(2) {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #54be90;
+}
+
+.aboutme__text button {
+  justify-self: flex-end;
+  text-align: center;
+  width: 30%;
+  color: #ffffff;
+  background-color: #54be90;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 5%;
+  border: 1px;
+}
+
+.findme {
+  display: flex;
+  flex-direction: column;
+  width: 99vh;
+  height: 30vh;
+  background-color: #232323;
+}
+.findme__heading {
+  width: 100vh;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  color: #ffffff;
+}
+
+.logos {
+  width: 100vh;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.findme-logo {
+  height: 65px;
+  width: 65px;
+  filter: invert(1);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contactme {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 99vh;
+  height: 65vh;
+  background-color: #54be90;
+}
+.contactme__heading {
+  font-size: large;
+}
+.contactme h2 {
+  margin-top: 20%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contactme__contactinfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 30%;
+  width: 77%;
+}
+.contact-box {
+  height: 10%;
+  width: 40%;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  background-color: #54be90;
+}
+
+.contactme__form {
+  height: 30%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 10vh;
+}
+.contactme__form label {
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+.contactme__form input {
+  height: 90%;
+  text-align: start;
+}
+.contactme__form button {
+  background-color: #232323;
+  color: #ffffff;
+  width: 100%;
+  align-self: center;
+}
+
+::placeholder {
+  color: #ffffff;
 }
