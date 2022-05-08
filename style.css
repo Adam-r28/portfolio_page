@@ -131,7 +131,7 @@ main {
   text-align: center;
 }
 
-.lang_progress {
+.lang__progress {
   width: 30vh;
 }
 
@@ -153,7 +153,7 @@ main {
   height: 23px;
   width: 80%;
   background-color: #54be90;
-  text-align: right;
+  text-align: end;
 }
 
 #progressbar2 > div {
@@ -162,32 +162,32 @@ main {
   background-color: #54be90;
 }
 #progressbar3 > div {
-  height: 25px;
+  height: 23px;
   width: 70%;
   background-color: #54be90;
 }
 #progressbar4 > div {
-  height: 25px;
+  height: 23px;
   width: 60%;
   background-color: #54be90;
 }
 #progressbar5 > div {
-  height: 25px;
+  height: 23px;
   width: 70%;
   background-color: #54be90;
 }
 #progressbar6 > div {
-  height: 25px;
+  height: 23px;
   width: 60%;
   background-color: #54be90;
 }
 #progressbar7 > div {
-  height: 25px;
+  height: 23px;
   width: 60%;
   background-color: #54be90;
 }
 #progressbar8 > div {
-  height: 25px;
+  height: 23px;
   width: 50%;
   background-color: #54be90;
 }
@@ -439,8 +439,9 @@ div.aboutme__text p:nth-child(2) {
   border: none;
   color: #ffffff;
 }
-.contactme__form input {
+.contactme__form textarea {
   height: 90%;
+  max-width: 100%;
   text-align: start;
   outline: none;
   border: none;
