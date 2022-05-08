@@ -99,6 +99,7 @@ html {
 .skills {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .skills__heading {
@@ -191,9 +192,92 @@ html {
 .portfolio {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #54be90;
+  height: 85vh;
+  width: 99vh;
+}
+
+.portfolio__heading {
+  justify-self: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: x-large;
 }
 
 .portfolio__boxes {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  align-content: space-evenly;
+  height: 90%;
+  width: 95%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 45%;
+  border: #ffffff;
+  border-style: solid;
+  background-color: #ebebeb;
+  margin: 1%;
+}
+
+.box__top {
+  height: 50%;
+  width: 99%;
+  margin: 0;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+.box__bottom {
+  height: 50%;
+  width: 99%;
+  margin: 0;
+  border-color: #ffffff;
+  border-style: solid;
+  text-align: center;
+  justify-self: flex-end;
+}
+
+.box__bottom p {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 3%;
+  padding-top: 5%;
+  font-size: smaller;
+}
+
+.box__bottom h4 {
+  margin-top: 1px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 13%;
+  padding-left: 3%;
+  padding-bottom: 0%;
+  justify-self: flex-end;
+  text-align: start;
+}
+
+.explore {
+  margin-top: 23%;
+  justify-self: flex-end;
+  text-align: center;
+  width: 65%;
+  color: #ffffff;
+  background-color: #54be90;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5%;
+  border: 1px;
 }
